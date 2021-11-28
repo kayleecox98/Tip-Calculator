@@ -11,10 +11,13 @@
         android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:autofillHints="10.00"
         android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/service_question"
@@ -63,6 +66,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
+        android:minHeight="48dp"
         android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
